@@ -3,11 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Área de Administração - Login</title>
+        <title>Página de cadastro - Usuário</title>
     </head>
     <body>
         <header>
-            <h1>Área de administração</h1>
+            <h1>Cadastro de usuários</h1>
         </header>
         <nav>
             <ul>
@@ -23,7 +23,7 @@
                 
             </ul>
         </nav>
-        <h2>Login</h2>
+        <h2>Cadastre-se</h2>
         <form>
             <label for="username">Usuário:</label>
             <input type="text" id="username" name="username" required>
@@ -31,9 +31,37 @@
             <label for="password">Senha:</label>
             <input type="password" id="password" name="password" required>
 
-            <button>Entrar</button>
+            <button>Cadastrar</button>
         </form>
-
+        <br>
+        <br>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Usuário cadastrado</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nome 1</td>
+                    <td>
+                        <button onclick="editarNome(1)">Editar</button>
+                        <button onclick="apagarNome(1)">Apagar</button>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>Nome 2</td>
+                    <td>
+                        <button onclick="editarNome(2)">Editar</button>
+                        <button onclick="apagarNome(2)">Apagar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+                <br>
+                <br>
         <footer>
             <p>&copy; Marcos Venicios Silva Sousa. 2023 | <a href="aut_index.html">Sobre o autor</a></p>
         </footer>

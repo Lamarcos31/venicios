@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página de cadastro - objeto tema</title>
+    </head>
+    <body>
+        <header>
+            <h1>Cadastro de objetos</h1>
+        </header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Página de login</a> 
+                </li>
+                <li>
+                    <a href="cad_index.html">Página de cadastro do "objeto tema"</a>
+                </li>
+                <li>
+                    <a href="usu_index.html">Página de cadastro de usuários </a>
+                </li>
+                
+            </ul>
+        </nav>
+        <h2>Cadastre os objetos</h2>
+        <form>
+            <label for="nome">Nome do objeto:</label>
+            <input type="text" id="nome" name="nome" required><br>
+            <br>
+
+            <label for="descricao">Descrição:</label>
+            <textarea id="descricao" name="descricao" rows="4" required></textarea>
+
+            <button>Cadastrar</button> <button>Editar</button>
+        </form>
+        <br>
+        <br>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>objeto 1</td>
+                    <td>Descrição do objeto 1</td>
+                    <td>
+                        <button onclick="editarObjeto(1)">Editar</button>
+                        <button onclick="apagarObjeto(1)">Apagar</button>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>Objeto 2</td>
+                    <td>Descrição do objeto 2</td>
+                    <td>
+                        <button onclick="editarObjeto(2)">Editar</button>
+                        <button onclick="apagarObjeto(2)">Apagar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <br>
+        <footer>
+            <p>&copy; Marcos Venicios Silva Sousa. 2023 | <a href="aut_index.html">Sobre o autor</a></p>
+        </footer>
+    </body>
+</html>
